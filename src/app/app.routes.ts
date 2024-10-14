@@ -9,4 +9,11 @@ export const routes: Routes = [
       return module.HomeComponent;
     },
   },
+  {
+    path: 'todos',
+    loadComponent: async () => {
+        const module = await import('./todos/todos.component');
+        return module.TodosComponent;
+    }
+  }
 ];
