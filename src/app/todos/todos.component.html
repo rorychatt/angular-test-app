@@ -2,7 +2,7 @@
 
 <p *ngIf="!todoItems().length">Loading...</p>
 
-<ul>ß
+<ul>
     @for (todo of todoItems(); track todo.id) {
         <li class="todos__item">
             <input id="todo-{{todo.id}}" type="checkbox" [value]="todo.completed"/>
