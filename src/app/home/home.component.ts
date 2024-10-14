@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, signal } from '@angular/core';
 import { GreetingComponent } from '../components/greeting/greeting.component';
 
 @Component({
@@ -9,5 +9,5 @@ import { GreetingComponent } from '../components/greeting/greeting.component';
   styleUrl: './home.component.scss'
 })
 export class HomeComponent {
-
+  homeMessage = signal('Hello, World!');
 }
