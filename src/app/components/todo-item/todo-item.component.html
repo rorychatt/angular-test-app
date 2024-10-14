@@ -10,6 +10,6 @@
     (change)="this.todoClicked()"
   />
   <label for="todo-{{ todo().id }}">
-    {{ todo().title }}
+    {{ todo().title | uppercase}}
   </label>
 </li>
